@@ -29,16 +29,6 @@ int main(void)
     {
         createPolygon(p1);
 
-        /*for (int i = 0; i < polygons.size(); i++)
-        {
-            if (polygons[i].isSelected && IsKeyDown(KEY_BACKSPACE))
-            {
-                polygons.erase(polygons.begin() + i);
-                selectedPolygon = -1;
-                break;
-            }
-        }*/
-
         if (IsKeyDown(KEY_BACKSPACE) && selectedPolygon >= 0)
         {
             polygons.erase(polygons.begin() + selectedPolygon);
