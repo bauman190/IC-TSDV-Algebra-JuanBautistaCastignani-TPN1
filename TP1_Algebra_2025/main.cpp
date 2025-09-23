@@ -218,7 +218,7 @@ bool checkColPointPoly(Vector2 point, Polygon polygon)
         Vector2 a1 = polygon.points[i];
         Vector2 a2 = polygon.points[(i + 1) % polygon.points.size()];
 
-        if (lineLineCol(point, raycast, a1, a2) && ((a1.y > point.y) != (a2.y > point.y)))
+        if (lineLineCol(point, raycast, a1, a2))
             counter++;
             
     }
